@@ -1,0 +1,15 @@
+{
+  "port": "COM5",
+  "output": "../build",
+  "debugger": "jlink",
+  "postbuild": "./postbuild.sh",
+  "intelliSenseGen": "global",
+  "buildPreferences": [
+    ["build.extra_flags", "-DMY_DEFINE=666 -DANOTHER_DEFINE=3.14 -Wall"],
+    ["compiler.cpp.extra_flags", "-DYET_ANOTER=\"hello\""]
+  ],
+  "board": "arduino:avr:nano",
+  "sketch": "test.ino",
+  "configuration": "cpu=atmega328",
+  "prebuild": "IF \"%VSCA_BUILD_MODE%\"==\"Verifying\" (echo VSCA_BUILD_MODE=%VSCA_BUILD_MODE% && echo VSCA_BOARD=%VSCA_BOARD%)"
+}

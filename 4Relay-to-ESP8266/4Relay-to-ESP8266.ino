@@ -3,14 +3,17 @@
 #define BLYNK_TEMPLATE_ID "TMPLSgETUamP"
 #define BLYNK_DEVICE_NAME "COLLAGE PROJECT"
 #define BLYNK_AUTH_TOKEN "Gq2xJ7uj2RbCqHurMycIC_UOpc1YE3by"
-/* Fill-in your Template ID (only if using Blynk.Cloud) */
 
 
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
+// You should get Auth Token in the Blynk App.
+// Go to the Project Settings (nut icon).
 char auth[] = BLYNK_AUTH_TOKEN;
 
+// Your WiFi credentials.
+// Set password to "" for open networks.
 char ssid[] = "SYED AMIR ALI";
 char pass[] = "@17807594@";
 
